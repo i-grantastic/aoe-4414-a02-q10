@@ -53,11 +53,11 @@ c_E = R_E_KM / calc_denom(E_E, lat_rad)
 s_E = R_E_KM*(1-E_E**2) / calc_denom(E_E, lat_rad)
 
 # finding ECEF components
-r_i_km = (c_E+hae_km)*math.cos(lat_rad)*math.cos(lon_rad)
-r_j_km = (c_E+hae_km)*math.cos(lat_rad)*math.sin(lon_rad)
-r_k_km = (s_E+hae_km)*math.sin(lat_rad)
+r_x_km = (c_E+hae_km)*math.cos(lat_rad)*math.cos(lon_rad)
+r_y_km = (c_E+hae_km)*math.cos(lat_rad)*math.sin(lon_rad)
+r_z_km = (s_E+hae_km)*math.sin(lat_rad)
 
 # print
-print('r_i = ',r_i_km,' km')
-print('r_j = ',r_j_km,' km')
-print('r_k = ',r_k_km,' km')
+print('r_x = ',r_x_km,' km')
+print('r_y = ',r_y_km,' km')
+print('r_z = ',r_z_km,' km')
